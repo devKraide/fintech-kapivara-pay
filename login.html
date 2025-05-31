@@ -10,17 +10,23 @@
 
 <body>
   <div class="login-container">
+
     <div class="login-box">
+
       <img src="assets/logo 2.png" alt="Kapivara Pay Logo" class="logo">
       <h1>Bem-vindo de volta</h1>
       <h2>acesse sua conta para continuar!</h2>
+
       <form id="loginForm">
+
         <div class="input-group">
           <input type="text" id="username" name="username" required placeholder="CPF ou e-mail">
         </div>
+
         <div class="input-group">
           <input type="password" id="password" name="password" required placeholder="Senha">
         </div>
+
         <div class="form-row">
           <div class="remember-me-group">
             <input type="checkbox" id="rememberMe" name="rememberMe">
@@ -28,6 +34,7 @@
           </div>
           <a href="#" class="forgot-password-link">Esqueci minha senha</a>
         </div>
+
         <button type="submit" class="login-button">ENTRAR</button>
         <div class="separator">
           <span class="line"></span>
@@ -38,16 +45,17 @@
           <span>Não tem uma conta? </span><a href="#">Cadastre-se</a>
         </div>
       </form>
+
     </div>
+
   </div>
   <script>
-    // Basic JS for form submission handling (optional)
+    // JS básico para manipulação do envio do formulário
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
       loginForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent actual submission for this example
-        alert('Login button clicked!');
-        // Add actual login logic here
+        event.preventDefault(); // Impede o envio real do formulário neste exemplo
+        // Adicione aqui a lógica real de login
       });
     }
   </script>

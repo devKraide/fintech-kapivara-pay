@@ -3,16 +3,16 @@ body {
   background-color: #f4f7f6;
   margin: 0;
   padding: 0;
-  display: grid; /* Changed from flex to grid */
-  place-items: center; /* Replaces justify-content and align-items for grid centering */
+  display: grid; /* Mudado de flex para grid */
+  place-items: center; /* Substitui justify-content e align-items para centralização em grid */
   height: 100vh;
   color: #333;
 }
 
 .login-container {
   text-align: center;
-  width: 500px; /* Fixed width */
-  max-width: 90%; /* Ensures it doesn't overflow on very small screens before media query hits */
+  width: 500px; /* Largura fixa */
+  max-width: 90%; /* Garante que não transborde em telas muito pequenas antes da media query */
 }
 
 .login-box {
@@ -21,23 +21,23 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 350px;
-  display: grid; /* Add display grid */
-  justify-items: center; /* Center items horizontally */
+  display: grid; /* Adiciona display grid */
+  justify-items: center; /* Centraliza itens horizontalmente */
 }
 
 .logo {
-  width: 200px; /* Adjust as needed */
+  width: 200px; /* Ajustar conforme necessário */
   margin-bottom: -10px;
 }
 
 .login-box h1 {
-  color: #007396; /* Updated to lighter tone */
+  color: #007396; /* Atualizado para tom mais claro */
   margin-bottom: -10px;
   font-size: 28px;
 }
 
 .login-box h2 {
-  color: #007396; /* Updated to lighter tone */
+  color: #007396; /* Atualizado para tom mais claro */
   margin-bottom: 45px;
   font-size: 18px;
 }
@@ -49,15 +49,15 @@ body {
 
 .input-group input {
   width: 100%;
-  padding: 14px 10px; /* Increased vertical padding */
-  border: 1px solid #b0b7bd; /* Updated border color */
+  padding: 14px 10px; /* Aumentado o padding vertical */
+  border: 1px solid #b0b7bd; /* Cor da borda atualizada */
   border-radius: 10px;
   box-sizing: border-box;
   font-size: 16px;
-  background-color:#d2d4d6;
+  background-color: #d2d4d6;
 }
 
-.input-group ::placeholder{
+.input-group ::placeholder {
   color: black;
 }
 
@@ -65,35 +65,35 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px; /* Or adjust as needed */
-  width: 100%; /* Ensure it takes full width of the form */
-  gap: 10px; /* Added gap between flex items */
+  margin-bottom: 20px; /* Ou ajuste conforme necessário */
+  width: 100%; /* Garante que ocupe toda a largura do formulário */
+  gap: 10px; /* Adicionado espaço entre os itens flex */
 }
 
 .remember-me-group {
   display: flex;
   align-items: center;
-  font-size: 16px; /* Changed from 14px to 16px */
+  font-size: 16px; /* Mudado de 14px para 16px */
   color: #555;
 }
 
-.remember-me-group input[type="checkbox"] { 
+.remember-me-group input[type="checkbox"] {
   margin-right: 5px;
-  border: 1px solid #007396; /* Outline color */
-  accent-color: #b0b7bd; /* Inside color when checked */
-  width: 16px; /* Optional: Explicitly set size for better control */
-  height: 16px; /* Optional: Explicitly set size for better control */
+  border: 1px solid #007396; /* Cor da borda */
+  accent-color: #b0b7bd; /* Cor interna quando marcado */
+  width: 16px; /* Opcional: Define tamanho explicitamente para melhor controle */
+  height: 16px; /* Opcional: Define tamanho explicitamente para melhor controle */
 }
 
 .remember-me-group label {
-  margin-bottom: 0; /* Override default label margin if any */
-  font-weight: normal; /* Override default label font-weight if any */
-  white-space: nowrap; /* Prevent label from wrapping */
+  margin-bottom: 0; /* Sobrescreve a margem padrão do label, se houver */
+  font-weight: normal; /* Sobrescreve o peso da fonte padrão do label, se houver */
+  white-space: nowrap; /* Impede a quebra da linha no label */
 }
 
 .forgot-password-link {
-  font-size: 16px; /* Changed from 14px to 16px */
-  color: #007396; /* Updated to lighter tone */
+  font-size: 16px; /* Mudado de 14px para 16px */
+  color: #007396; /* Atualizado para tom mais claro */
   text-decoration: none;
 }
 
@@ -105,27 +105,29 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 20px 0; /* Adjust margin as needed */
-  width: calc(100% + 40px); /* Exceed input width, adjust 40px as needed */
-  margin-left: -20px; /* Center the extended separator */
+  margin: 20px 0; /* Ajustar margem conforme necessário */
+  width: calc(
+    100% + 40px
+  ); /* Excede a largura do input, ajuste 40px conforme necessário */
+  margin-left: -20px; /* Centraliza o separador estendido */
 }
 
 .separator .line {
   flex-grow: 1;
   height: 1px;
-  background-color: #ddd; /* Line color */
+  background-color: #ddd; /* Cor da linha */
 }
 
 .separator .or-text {
-  margin: 0 15px; /* Gap around "or" */
-  color: #888; /* Text color for "or" */
+  margin: 0 15px; /* Espaço ao redor do "ou" */
+  color: #888; /* Cor do texto para "ou" */
   font-size: 14px;
 }
 
 .login-button {
   width: 100%;
   padding: 12px;
-  background-color: #007396; /* Updated to lighter tone */
+  background-color: #007396; /* Atualizado para tom mais claro */
   color: white;
   border: none;
   border-radius: 4px;
@@ -135,31 +137,16 @@ body {
 }
 
 .login-button:hover {
-  background-color: #005f7a; /* Darker shade for hover of the new lighter tone */
-}
-
-.links {
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-.links a {
-  color: #007396; /* Updated to lighter tone */
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.links a:hover {
-  text-decoration: underline;
+  background-color: #005f7a; /* Tom mais escuro para o hover do novo tom mais claro */
 }
 
 .links-bottom {
-  text-align: center; /* Center the Sign Up link */
-  margin-top: 15px; /* Add some space above the Sign Up link */
+  text-align: center; /* Centraliza o link de cadastro */
+  margin-top: 15px; /* Espaço acima do link de cadastro */
 }
 
 .links-bottom a {
-  color: #007396; /* Updated to lighter tone */
+  color: #007396; /* Tom mais claro */
   text-decoration: none;
   font-size: 14px;
 }
@@ -168,16 +155,16 @@ body {
   text-decoration: underline;
 }
 
-/* Media query for smaller screens */
+/* Media query para telas menores */
 @media (max-width: 600px) {
   .login-container {
-    width: 90%; /* Decrease width on smaller screens */
+    width: 90%; /* Reduz a largura em telas pequenas */
   }
   .login-box {
-    width: 100%; /* Allow login box to take full width of the container */
-    padding: 20px; /* Adjust padding for smaller screens */
+    width: 100%; /* Login box ocupa toda a largura do container */
+    padding: 20px; /* Ajusta o padding para telas pequenas */
   }
   .logo {
-    width: 150px; /* Optionally adjust logo size on smaller screens */
+    width: 150px; /* Ajusta o tamanho do logo em telas pequenas */
   }
 }
