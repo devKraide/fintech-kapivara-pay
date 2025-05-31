@@ -1,0 +1,183 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  display: grid; /* Changed from flex to grid */
+  place-items: center; /* Replaces justify-content and align-items for grid centering */
+  height: 100vh;
+  color: #333;
+}
+
+.login-container {
+  text-align: center;
+  width: 500px; /* Fixed width */
+  max-width: 90%; /* Ensures it doesn't overflow on very small screens before media query hits */
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  display: grid; /* Add display grid */
+  justify-items: center; /* Center items horizontally */
+}
+
+.logo {
+  width: 200px; /* Adjust as needed */
+  margin-bottom: -10px;
+}
+
+.login-box h1 {
+  color: #007396; /* Updated to lighter tone */
+  margin-bottom: -10px;
+  font-size: 28px;
+}
+
+.login-box h2 {
+  color: #007396; /* Updated to lighter tone */
+  margin-bottom: 45px;
+  font-size: 18px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 10px; /* Increased vertical padding */
+  border: 1px solid #b0b7bd; /* Updated border color */
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color:#d2d4d6;
+}
+
+.input-group ::placeholder{
+  color: black;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Or adjust as needed */
+  width: 100%; /* Ensure it takes full width of the form */
+  gap: 10px; /* Added gap between flex items */
+}
+
+.remember-me-group {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* Changed from 14px to 16px */
+  color: #555;
+}
+
+.remember-me-group input[type="checkbox"] { 
+  margin-right: 5px;
+  border: 1px solid #007396; /* Outline color */
+  accent-color: #b0b7bd; /* Inside color when checked */
+  width: 16px; /* Optional: Explicitly set size for better control */
+  height: 16px; /* Optional: Explicitly set size for better control */
+}
+
+.remember-me-group label {
+  margin-bottom: 0; /* Override default label margin if any */
+  font-weight: normal; /* Override default label font-weight if any */
+  white-space: nowrap; /* Prevent label from wrapping */
+}
+
+.forgot-password-link {
+  font-size: 16px; /* Changed from 14px to 16px */
+  color: #007396; /* Updated to lighter tone */
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0; /* Adjust margin as needed */
+  width: calc(100% + 40px); /* Exceed input width, adjust 40px as needed */
+  margin-left: -20px; /* Center the extended separator */
+}
+
+.separator .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ddd; /* Line color */
+}
+
+.separator .or-text {
+  margin: 0 15px; /* Gap around "or" */
+  color: #888; /* Text color for "or" */
+  font-size: 14px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007396; /* Updated to lighter tone */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #005f7a; /* Darker shade for hover of the new lighter tone */
+}
+
+.links {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.links a {
+  color: #007396; /* Updated to lighter tone */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links-bottom {
+  text-align: center; /* Center the Sign Up link */
+  margin-top: 15px; /* Add some space above the Sign Up link */
+}
+
+.links-bottom a {
+  color: #007396; /* Updated to lighter tone */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .login-container {
+    width: 90%; /* Decrease width on smaller screens */
+  }
+  .login-box {
+    width: 100%; /* Allow login box to take full width of the container */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .logo {
+    width: 150px; /* Optionally adjust logo size on smaller screens */
+  }
+}

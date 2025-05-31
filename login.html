@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Kapivara Pay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="assets/logo 2.png" alt="Kapivara Pay Logo" class="logo">
+      <h1>Bem-vindo de volta</h1>
+      <h2>acesse sua conta para continuar!</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="text" id="username" name="username" required placeholder="CPF ou e-mail">
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" name="password" required placeholder="Senha">
+        </div>
+        <div class="form-row">
+          <div class="remember-me-group">
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Lembrar de mim</label>
+          </div>
+          <a href="#" class="forgot-password-link">Esqueci minha senha</a>
+        </div>
+        <button type="submit" class="login-button">ENTRAR</button>
+        <div class="separator">
+          <span class="line"></span>
+          <span class="or-text">ou</span>
+          <span class="line"></span>
+        </div>
+        <div class="links-bottom">
+          <span>Não tem uma conta? </span><a href="#">Cadastre-se</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    // Basic JS for form submission handling (optional)
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+      loginForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent actual submission for this example
+        alert('Login button clicked!');
+        // Add actual login logic here
+      });
+    }
+  </script>
+</body>
+
+</html>
