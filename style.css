@@ -3,16 +3,16 @@ body {
   background-color: #f4f7f6;
   margin: 0;
   padding: 0;
-  display: grid; /* Mudado de flex para grid */
-  place-items: center; /* Substitui justify-content e align-items para centralização em grid */
+  display: grid;
+  place-items: center;
   height: 100vh;
   color: #333;
 }
 
 .login-container {
   text-align: center;
-  width: 500px; /* Largura fixa */
-  max-width: 90%; /* Garante que não transborde em telas muito pequenas antes da media query */
+  width: 500px;
+  max-width: 90%;
 }
 
 .login-box {
@@ -21,23 +21,23 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 350px;
-  display: grid; /* Adiciona display grid */
-  justify-items: center; /* Centraliza itens horizontalmente */
+  display: grid;
+  justify-items: center;
 }
 
 .logo {
-  width: 200px; /* Ajustar conforme necessário */
+  width: 200px;
   margin-bottom: -10px;
 }
 
 .login-box h1 {
-  color: #007396; /* Atualizado para tom mais claro */
+  color: #007396;
   margin-bottom: -10px;
   font-size: 28px;
 }
 
 .login-box h2 {
-  color: #007396; /* Atualizado para tom mais claro */
+  color: #007396;
   margin-bottom: 45px;
   font-size: 18px;
 }
@@ -49,8 +49,8 @@ body {
 
 .input-group input {
   width: 100%;
-  padding: 14px 10px; /* Aumentado o padding vertical */
-  border: 1px solid #b0b7bd; /* Cor da borda atualizada */
+  padding: 14px 10px;
+  border: 1px solid #b0b7bd;
   border-radius: 10px;
   box-sizing: border-box;
   font-size: 16px;
@@ -65,35 +65,35 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px; /* Ou ajuste conforme necessário */
-  width: 100%; /* Garante que ocupe toda a largura do formulário */
-  gap: 10px; /* Adicionado espaço entre os itens flex */
+  margin-bottom: 20px;
+  width: 100%;
+  gap: 10px;
 }
 
 .remember-me-group {
   display: flex;
   align-items: center;
-  font-size: 16px; /* Mudado de 14px para 16px */
+  font-size: 16px;
   color: #555;
 }
 
 .remember-me-group input[type="checkbox"] {
   margin-right: 5px;
-  border: 1px solid #007396; /* Cor da borda */
-  accent-color: #b0b7bd; /* Cor interna quando marcado */
-  width: 16px; /* Opcional: Define tamanho explicitamente para melhor controle */
-  height: 16px; /* Opcional: Define tamanho explicitamente para melhor controle */
+  border: 1px solid #007396;
+  accent-color: #b0b7bd;
+  width: 16px;
+  height: 16px;
 }
 
 .remember-me-group label {
-  margin-bottom: 0; /* Sobrescreve a margem padrão do label, se houver */
-  font-weight: normal; /* Sobrescreve o peso da fonte padrão do label, se houver */
-  white-space: nowrap; /* Impede a quebra da linha no label */
+  margin-bottom: 0;
+  font-weight: normal;
+  white-space: nowrap;
 }
 
 .forgot-password-link {
-  font-size: 16px; /* Mudado de 14px para 16px */
-  color: #007396; /* Atualizado para tom mais claro */
+  font-size: 16px;
+  color: #007396;
   text-decoration: none;
 }
 
@@ -105,48 +105,46 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 20px 0; /* Ajustar margem conforme necessário */
-  width: calc(
-    100% + 40px
-  ); /* Excede a largura do input, ajuste 40px conforme necessário */
-  margin-left: -20px; /* Centraliza o separador estendido */
+  margin: 20px 0;
+  width: calc(100% + 40px);
+  margin-left: -20px;
 }
 
 .separator .line {
   flex-grow: 1;
   height: 1px;
-  background-color: #ddd; /* Cor da linha */
+  background-color: #ddd;
 }
 
 .separator .or-text {
-  margin: 0 15px; /* Espaço ao redor do "ou" */
-  color: #888; /* Cor do texto para "ou" */
+  margin: 0 15px;
+  color: #888;
   font-size: 14px;
 }
 
 .login-button {
   width: 100%;
   padding: 12px;
-  background-color: #007396; /* Atualizado para tom mais claro */
+  background-color: #007396;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .login-button:hover {
-  background-color: #005f7a; /* Tom mais escuro para o hover do novo tom mais claro */
+  background-color: #005f7a;
 }
 
 .links-bottom {
-  text-align: center; /* Centraliza o link de cadastro */
-  margin-top: 15px; /* Espaço acima do link de cadastro */
+  text-align: center;
+  margin-top: 15px;
 }
 
 .links-bottom a {
-  color: #007396; /* Tom mais claro */
+  color: #007396;
   text-decoration: none;
   font-size: 14px;
 }
@@ -155,16 +153,8 @@ body {
   text-decoration: underline;
 }
 
-/* Media query para telas menores */
 @media (max-width: 600px) {
-  .login-container {
-    width: 90%; /* Reduz a largura em telas pequenas */
-  }
-  .login-box {
-    width: 100%; /* Login box ocupa toda a largura do container */
-    padding: 20px; /* Ajusta o padding para telas pequenas */
-  }
   .logo {
-    width: 150px; /* Ajusta o tamanho do logo em telas pequenas */
+    width: 150px;
   }
 }
