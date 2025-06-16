@@ -9,20 +9,14 @@ body {
   color: #333;
 }
 
-.login-container {
-  text-align: center;
-  width: 500px;
-  max-width: 90%;
-}
-
 .login-box {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 350x;
   display: grid;
   justify-items: center;
+  max-width: 100%;
 }
 
 .logo {
@@ -57,7 +51,7 @@ body {
   background-color: #d2d4d6;
 }
 
-.input-group ::placeholder {
+.input-group input::placeholder {
   color: black;
 }
 
